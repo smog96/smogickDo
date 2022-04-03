@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "todo"
+version = "0.1.0"
+description = ""
+authors = ["Burdasov Ilya <smog965@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+flake8 = "^4.0.1"
+alembic = "^1.7.7"
+fastapi = "^0.75.1"
+pydantic = "^1.9.0"
+SQLAlchemy = "^1.4.34"
+uvicorn = "^0.17.6"
+watchgod = "^0.8.2"
+fastapi-camelcase = "^1.0.5"
+psycopg2-binary = "^2.9.3"
+asyncpg = "^0.25.0"
+httpx = "^0.22.0"
+black = "^22.3.0"
+uvloop = "^0.16.0"
+dependency-injector = "^4.39.1"
+python-dotenv = "^0.20.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
