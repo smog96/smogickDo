@@ -9,7 +9,6 @@ from alembic import context
 # access to the values within the .ini file in use.
 from src.core.config import settings
 from src.core.db.base_model import BaseModel
-from src.db_models import *
 
 config = context.config
 config.set_main_option('sqlalchemy.url', f'postgresql://{settings.db_dsn}')
@@ -23,7 +22,7 @@ if config.config_file_name is not None:
 # for 'autogenerate' support
 # from myapp import mymodel
 # target_metadata = mymodel.Base.metadata
-target_metadata = BaseModel
+target_metadata = BaseModel.metadata
 
 
 # other values from the config, defined by the needs of env.py,
