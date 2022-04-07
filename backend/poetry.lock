@@ -492,7 +492,7 @@ anyio = ">=3.0.0,<4"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "c590d9f20525da071bc2b125d6a8dc8e951c8c8ce4210865499c6eb1c3ba3d4d"
+content-hash = "d8713f294cc59442cc1cd49e6703b18b550240ed412431d289fbea9d9a10039f"
 
 [metadata.files]
 alembic = [

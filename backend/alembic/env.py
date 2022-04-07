@@ -9,6 +9,7 @@ from alembic import context
 # access to the values within the .ini file in use.
 from src.core.config import settings
 from src.core.db.base_model import BaseModel
+from src.db_models import *
 
 config = context.config
 config.set_main_option('sqlalchemy.url', f'postgresql://{settings.db_dsn}')

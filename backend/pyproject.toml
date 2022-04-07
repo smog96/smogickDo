@@ -21,6 +21,7 @@ black = "^22.3.0"
 uvloop = "^0.16.0"
 dependency-injector = "^4.39.1"
 python-dotenv = "^0.20.0"
+greenlet = "^1.1.2"
 
 [tool.poetry.dev-dependencies]
 

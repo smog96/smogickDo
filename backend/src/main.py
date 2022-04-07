@@ -1,6 +1,7 @@
 from fastapi import FastAPI
+from src.todo.controllers import router as todo_router
 
-routers = ()
+routers = (todo_router,)
 
 
 def get_application() -> FastAPI:

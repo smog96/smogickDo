@@ -7,6 +7,8 @@ class _Settings(BaseSettings):
     db_dsn: str
     api_version: str
 
+    enable_auth: bool = False
+
     class Config:
         env_file = "envs/dev.env"
 

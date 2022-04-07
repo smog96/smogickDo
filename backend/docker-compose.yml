@@ -12,30 +12,33 @@ services:
     ports:
       - "5432:5432"
 
-  db_migrate:
-    image: api:latest
-    container_name: smogickdo.migrate
-    command: "alembic upgrade head"
-    env_file:
-      - envs/dev.env
-    depends_on:
-      - db
+#  myapi:
+#    image: myapi
+#    user: 1000:1000
+#    container_name: smogickdo.api
+#    build:
+#      context: .
+#      dockerfile: Dockerfile
+#    restart: on-failure
+#    volumes:
+#      - .:/myapi
+#    ports:
+#      - "8000:8000"
+#    env_file:
+#      - envs/dev.env
+#    depends_on:
+#      - db
 
-  api:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    container_name: smogickdo.api
-    restart: on-failure
-    volumes:
-      - .:/api
-    ports:
-      - "8000:8000"
-    env_file:
-      - envs/dev.env
-    depends_on:
-      - db
-      - db_migrate
+#  db_migrate:
+#    image: api:latest
+#    user: 1000:1000
+#    container_name: smogickdo.migrate
+#    command: "alembic upgrade head"
+#    env_file:
+#      - envs/dev.env
+#    depends_on:
+#      - db
+#      - myapi
 
 volumes:
   postgres-data:
